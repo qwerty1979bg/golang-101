@@ -9,6 +9,9 @@ apt-get update ${APTARGS}
 # install golang-1.10
 apt-get install -y golang-1.10 ${APTARGS}
 
+# Symlink to our GO path
+ln -s /vagrant/go /home/vagrant/
+
 # Shamelessly stolen from Alvaro (who stole it from somewhere else) :)
 grep 'GOPATH|GOROOT' ~/.profile &>/dev/null || {
   sudo mkdir -p ~/go
@@ -20,7 +23,7 @@ grep 'GOPATH|GOROOT' ~/.profile &>/dev/null || {
 }
 
 grep 'GOPATH|GOROOT' /home/vagrant/.profile &>/dev/null || {
-  sudo mkdir -p /home/vagrant/go
+#  sudo mkdir -p /home/vagrant/go
   cp /home/vagrant/.profile /home/vagrant/.profile.ori
   grep -v 'GOPATH|GOROOT' /home/vagrant/.profile.ori | sudo tee -a /home/vagrant/.profile
   echo 'export GOROOT=/usr/lib/go-1.10' | sudo tee -a /home/vagrant/.profile
@@ -31,6 +34,3 @@ grep 'GOPATH|GOROOT' /home/vagrant/.profile &>/dev/null || {
 
 # Cleanup
 apt-get clean ${APTARGS}
-
-# Symlink to our GO path
-ln -s /vagrant/go /home/vagrant/go

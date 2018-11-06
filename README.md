@@ -13,7 +13,8 @@ GO scipts assignment + Vagrant box
 ```
 vagrant up
 vagrant ssh
-go run /vagrant/hello.go
+go run go/src/hello/hello.go
+go install -v hello && go test -v hello
 exit
 vagrant destroy
 ```
