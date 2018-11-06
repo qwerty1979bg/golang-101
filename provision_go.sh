@@ -31,3 +31,6 @@ grep 'GOPATH|GOROOT' /home/vagrant/.profile &>/dev/null || {
 
 # Cleanup
 apt-get clean ${APTARGS}
+
+# Symlink to our GO path
+ln -s /vagrant/go /home/vagrant/go
