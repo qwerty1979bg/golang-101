@@ -1,2 +1,11 @@
 language: go
 
+deploy:
+  provider: releases
+  api_key:
+    secure: dYrfW5A9L1rzZXA7KxnCFRloEPdmMPHY6IUwfk46MzshKnh6IGD+i7IZ3fgM1QRMdRu9jOYqOhvo0XwscmHd6KfxNw1/cJNoHucAg5HqwIhDDplbCkfdd/Rpnu6/msAvVBSTG3yBtdIVxVJ1cKwDCD9Dzck5yn1mH/s4+M7lT/JZOFfVaSOprt6MeW8sBOhZOMyfzKMy8tVJxZGozXQJZtS653GscJWiVAbzoJSfzp3zRXJC2YNwYZWkxC0SlOiih0hHZDIWbL7dHwpWgH/nX/7mZpYF8DqmjNtdBUWTTi9pL1PrIfRYtfyKRAC8JuAtX6XCRdrHyGHaRl/Dr5endBJAuxC54QWdceS2BJaG7O4O+416tqhTJTtjIW/l6Kgu41o0pcQCZJbcx5iwAuOcoDI28sI0sNkTVNdjNKuszm2E6ANgpauzd4QalCxrjGRXff7RnRxS9q4oDhnWCGiSPSfwORqLjW0CUCpaTj6ImuqHVzmzwNemVJgzS9l7hzXTlZk9cbTOIJlvi+GhWWbquas4ExRk8Bafax4ZBPRvpDFTYMK0ZNd9/BCIt4Gb7jRgYPA+p87Tq+X0xf4JiqJ6PJwS82tKkAZwl3rzz/jsLlxC/G9lQudjRDo6BN3GpGSNvamZ1FU/pMgYdd2ZcYc1BsqEuTTSG874vCkOutL55Z0=
+  file: hello
+  skip_cleanup: true
+  on:
+    repo: qwerty1979bg/golang-101
+    tags: true
