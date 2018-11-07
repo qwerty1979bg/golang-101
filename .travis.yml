@@ -6,4 +6,4 @@ deploy:
   file: hello
   on:
     repo: qwerty1979bg/golang-101
-    branch: release
+    tags: true
