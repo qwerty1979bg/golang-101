@@ -6,8 +6,8 @@ deploy:
   file: 
     - "hello"
 #    - "/home/travis/gopath/bin/hello"
-    - "$GOPATH/bin/hello"
-    - "hello.go"
+#    - "$GOPATH/bin/hello"
+#    - "hello.go"
   skip_cleanup: true
   on:
     repo: qwerty1979bg/golang-101
