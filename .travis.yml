@@ -4,9 +4,8 @@ deploy:
   api_key:
     secure: ghPdfq6Z28tubSJ/OlvkAbgsktvT6P0UWIte1E239kjq8xDXxOvEzcVkQ2SO7yXmEgSu0n9vCoExt0rAeP/j0bNO2oM8NTdFuXHVrtfLNvQJAfUmFy4q0PwaMfwdSmW/KT32QmwY9igtJCEyPj3LZQwdtuf4My7xTa2WcDS3WRaFp7ieqyYzZD5wLgKTMo+A72HzpZq9dSOa2XdAiR0o+iZbmbmZsfr5FAhzZb63SuXd0T2rjSfWnCiEQCQVa8KWgxaeNso1GUlJjUAENTlSEYqZsKM8kCjQ/vYnjqMnjL9ciVC02C1cmNvHvotib6b4YF+yCptVc8Pe2iedKuwNsB4U/VwQePPk6vqOIsyYBXDHWCGOK98idFgzAzdDHvJEkJ3ndX+lOVTtspls69/GpE0jeqwgquk3/lmITYGToUQBlSTWC2Guyob6sHbu1DVb7QOZ0ZtSIdeBC9zzABC+8r4vj6K7VoeHSmGp8OdHiizLPDuKZWG2fQJL3xw0wFT9jPTYufKEgl+DJpUpGZC516cQmvdccETEmjHl0tIHcl62xa6d1t38Z9qTI6oS6gBODDkrYWaH5a+1YM/Yst6hWN/KyqSNoEotEZEPKUA9WE3AnQx73GOkvhdGJK4ZORJhDOWc6JfGoSbM2Y7uH8HH5a828KMHpTYJuxqQ++FFugY=
   file: 
-    - "hello"
-    - "/home/travis/gopath/bin/hello"
     - "$GOPATH/bin/hello"
+    - "$GOPATH/src/hello/hello.go
   skip_cleanup: true
   on:
     repo: qwerty1979bg/golang-101
