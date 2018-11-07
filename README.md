@@ -7,8 +7,8 @@ GO scipts assignment + Vagrant box
 
 - [x]  A simple 'hello world' script - hello.go
 - [x]  Travis check for our 'hello world' script - check.go
-- [ ]  Setup travis to compile a 'hello world' binary on release
-- [ ]  Visual check that the compiled binary got uploaded during a release
+- [x]  Setup travis to compile a 'hello world' binary on release
+- [x]  Visual check that the compiled binary got uploaded during a release
 
 ```
 vagrant up
